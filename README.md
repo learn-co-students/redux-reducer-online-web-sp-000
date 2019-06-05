@@ -1,6 +1,6 @@
 # Reducers Lab
 
-![reduce](https://media.giphy.com/media/3o7TKwxYkeW0ZvTqsU/giphy.gif)
+<!-- ![reduce](https://media.giphy.com/media/3o7TKwxYkeW0ZvTqsU/giphy.gif) -->
 
 ## Objectives
 
@@ -47,7 +47,7 @@ input, the reducers will always return the same output.
 
 ## A Note on the Object Spread Operator
 
-![future](https://media.giphy.com/media/l0CRCmMBYQbL7dCmI/giphy.gif)
+<!-- ![future](https://media.giphy.com/media/l0CRCmMBYQbL7dCmI/giphy.gif) -->
 
 **Note that the object spread operator is incorporated into standard JavaScript,
 and is instead proposed for future versions of JS.  We can only use it here
