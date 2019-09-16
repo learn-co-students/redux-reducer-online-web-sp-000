@@ -4,5 +4,6 @@ export function managePresents(state, action){
           return {numberOfPresents: state.numberOfPresents + 1}
         default:
           return state;
+        
       }
 }
