@@ -35,6 +35,7 @@ describe('manageFriends', () => {
     expect(manageFriends(state, { type: 'Random Action Type' })).toEqual(state);
   });
 
+
   it("adds the friend when type is 'ADD_FRIEND' and the action has a friend property with a name, hometown and id", () =>{
     expect(manageFriends(state, {
       type: "ADD_FRIEND",
@@ -58,6 +59,7 @@ describe('manageFriends', () => {
       ]
     });
   });
+
 
   it("removes the friend when action type is 'REMOVE_FRIEND' and the action has a property of the friends id to be removed", () =>{
     let state = {
