@@ -8,7 +8,6 @@ export function manageFriends(state, action){
       let friendToBeRemoved = newFriendsArray.find(friend => friend.id === action.id);
       newFriendsArray.splice(newFriendsArray.indexOf(friendToBeRemoved), 1);
       return {friends: newFriendsArray};
-
     default:
       return state;
   }
