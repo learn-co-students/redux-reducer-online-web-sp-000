@@ -6,11 +6,11 @@ export function managePresents(state, action){ //function
 
     //reducer: receives a type set to INCREASE, return new state increased by 1
     switch (action.type) {
-        case 'INCREASE':
-            return {numberOfPresents: state.numberOfPresents + 1}
+        case 'INCREASE': //action object 
+            return {numberOfPresents: state.numberOfPresents + 1} //new js object
         case 'DECREASE_COUNT':
-            return {numberOfPresents: state.numberOfPresents - 1}
+            return {numberOfPresents: state.numberOfPresents - 1} //new js object
         default:
-            return state;
+            return state; //returning new state
         }
 }
