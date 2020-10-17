@@ -11,9 +11,3 @@ export function manageFriends(state, action){
 }
 
 // no need
-```js
-  action = {
-    type: "REMOVE_FRIEND",
-    id: 1
-  }
-```
