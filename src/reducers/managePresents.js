@@ -1,2 +1,10 @@
-export function managePresents(state, action){
+let initial = {numberOfPresents: 0};
+
+export function managePresents(state = initial, action){
+    switch (action.type) {
+        case 'INCREASE':
+            return {numberOfPresents: state.numberOfPresents + 1}
+        default:
+            return state;
+    }
 }
