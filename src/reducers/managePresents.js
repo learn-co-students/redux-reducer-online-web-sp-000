@@ -1,5 +1,7 @@
-export function managePresents(action, state = {numberOfPresents: 0}){
+export function managePresents(state = {numberOfPresents: 0}, action){
   if (action.type === 'INCREASE') {
-    return state.numberOfPresents += 1;
+    return {...state, numberOfPresents: (state.numberOfPresents + 1)};
+  } else {
+    return state;
   }
 }
