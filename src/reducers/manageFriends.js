@@ -4,7 +4,6 @@ export function manageFriends(state, action){
    // removes the friend when action type is 'REMOVE_FRIEND' and the action has a property of the friends id to be removed:
    switch(action.type) {
       case 'ADD_FRIEND':
-         // When action has a friend property, add them with state's friends list to new object, return it
          return {
             friends: [
                ...state.friends, 
@@ -16,13 +15,11 @@ export function manageFriends(state, action){
             ]
          };
       case 'REMOVE_FRIEND':
-         // When action type remove and action has friend property, return new object without that friend
-         // Traverse friends array until friend to remove is found. Remove friend and return new friends obj
-         // return {
-         //    friends: state.friends.map((friend) => {
-         //       return friend.id !== action.friend.id;
-         //    })
-         // };
+         return {
+            friends: state.friends.filter((friend) => {
+               return friend.id !== action.id;
+            })
+         };
       default:
          return state;
    }
