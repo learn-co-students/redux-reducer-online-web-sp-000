@@ -23,7 +23,7 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
 ## Instructions
 
 1. In `managePresents.js`, write a function called `managePresents()` that takes
-   in the previous state and an action as its argument. Set an default value for
+   in the previous state and an action as its argument. Set a default value for
    the state argument - an object with a key, `numberOfPresents`, assigned to
    `0`.
 
