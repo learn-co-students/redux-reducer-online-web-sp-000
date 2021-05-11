@@ -6,9 +6,9 @@ export function manageFriends(state, action){
             return {friends: [ ...state.friends, {...action.friend}] }
        
         case 'REMOVE_FRIEND':
-          let old = state.friends.slice();
+           let old = state.friends.slice();
         
-        let newA = findInArray(action.id, old)
+           let newA = findInArray(action.id, old)
    
         return {friends: newA}
              
