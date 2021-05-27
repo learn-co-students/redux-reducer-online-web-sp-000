@@ -5,6 +5,7 @@ export function manageFriends(state, action){
         case "REMOVE_FRIEND":
             return {friends: state.friends.map(person => {
                 if (person.id != action.id){
+                    console.log(person)
                     return person
                 }
             })}
