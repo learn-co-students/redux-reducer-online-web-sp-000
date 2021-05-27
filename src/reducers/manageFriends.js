@@ -3,12 +3,7 @@ export function manageFriends(state, action){
         case "ADD_FRIEND":
             return {friends: [...state.friends, action.friend]}
         case "REMOVE_FRIEND":
-            return {friends: state.friends.map(person => {
-                if (person.id != action.id){
-                    console.log(person)
-                    return person
-                }
-            })}
+            return {friends: state.friends.filter(friend => friend.id != action.id)}
         default:
             return state
     }
